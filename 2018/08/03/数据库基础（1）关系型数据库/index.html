@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="数据库," />
 
 
 
@@ -79,17 +79,18 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="概述技术时间长不用就会生疏，最近有一个需求涉及到数据库相关的一些知识，才发现多表查询都忘记怎么写了，近期会陆续整理一下数据库相关的一些资料，权当是以后查起来方便点。 1 是什么同样的，学习一个东西要先知道他是什么： 建立在关系模型上的数据库。常见的有：Oracle，MySql，SqlServer等目前市面上用的多的数据库基本都是关系型的 数据库中的“表”代表实体，每张表之间的主外键等联系是实体关系">
+<meta name="keywords" content="数据库">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://ieewbbwe.github.io./2018/08/03/hello-world/index.html">
+<meta property="og:title" content="数据库基础（1）关系型数据库">
+<meta property="og:url" content="https://ieewbbwe.github.io./2018/08/03/数据库基础（1）关系型数据库/index.html">
 <meta property="og:site_name" content="Picher&#39;s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="概述技术时间长不用就会生疏，最近有一个需求涉及到数据库相关的一些知识，才发现多表查询都忘记怎么写了，近期会陆续整理一下数据库相关的一些资料，权当是以后查起来方便点。 1 是什么同样的，学习一个东西要先知道他是什么： 建立在关系模型上的数据库。常见的有：Oracle，MySql，SqlServer等目前市面上用的多的数据库基本都是关系型的 数据库中的“表”代表实体，每张表之间的主外键等联系是实体关系">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-03T05:47:56.853Z">
+<meta property="og:updated_time" content="2018-08-03T07:39:22.198Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="数据库基础（1）关系型数据库">
+<meta name="twitter:description" content="概述技术时间长不用就会生疏，最近有一个需求涉及到数据库相关的一些知识，才发现多表查询都忘记怎么写了，近期会陆续整理一下数据库相关的一些资料，权当是以后查起来方便点。 1 是什么同样的，学习一个东西要先知道他是什么： 建立在关系模型上的数据库。常见的有：Oracle，MySql，SqlServer等目前市面上用的多的数据库基本都是关系型的 数据库中的“表”代表实体，每张表之间的主外键等联系是实体关系">
 
 
 
@@ -119,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://ieewbbwe.github.io./2018/08/03/hello-world/"/>
+  <link rel="canonical" href="https://ieewbbwe.github.io./2018/08/03/数据库基础（1）关系型数据库/"/>
 
 
 
 
 
-  <title>Hello World | Picher's Blog</title>
+  <title>数据库基础（1）关系型数据库 | Picher's Blog</title>
   
 
 
@@ -242,7 +243,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://ieewbbwe.github.io./2018/08/03/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://ieewbbwe.github.io./2018/08/03/数据库基础（1）关系型数据库/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Picher">
@@ -259,7 +260,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">数据库基础（1）关系型数据库</h1>
         
 
         <div class="post-meta">
@@ -271,7 +272,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-03T13:47:56+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-08-03T15:36:46+08:00">
                 2018-08-03
               </time>
             
@@ -309,15 +310,68 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>技术时间长不用就会生疏，最近有一个需求涉及到数据库相关的一些知识，才发现多表查询都忘记怎么写了，近期会陆续整理一下数据库相关的一些资料，权当是以后查起来方便点。</p>
+<h3 id="1-是什么"><a href="#1-是什么" class="headerlink" title="1 是什么"></a>1 是什么</h3><p>同样的，学习一个东西要先知道他是什么：</p>
+<p>建立在关系模型上的数据库。常见的有：Oracle，MySql，SqlServer等目前市面上用的多的数据库基本都是关系型的</p>
+<p>数据库中的“表”代表实体，每张表之间的主外键等联系是实体关系。</p>
+<p>例如：</p>
+<p>每一个学生有学号，性别，班级，地址，电话等资料，在数据库中就是用一张学生表来表示，这个表的字段就是学生的这些属性。这个学生就是一个实体。</p>
+<p>每一个班级有辅导员，班长，学习委员等资料，在数据库中用一张班级表表示，班级就是一个实体。</p>
+<p>一个学生一般来说只能有一个班级，一个班级可以有多名学生，因此学生和班级存在联系，这种联系就是实体之间的关系。</p>
+<p>####1.1 范式</p>
+<p>概念：关系型数据库规范</p>
+<p>作用：设计表，减少数据冗余</p>
+<p><strong>1）第一范式（1NF）</strong></p>
+<p><strong><em>无重复的列</em></strong></p>
+<ul>
+<li>同一列中不可有多个值；</li>
+<li>每一行只包含一个实例信息；</li>
+</ul>
+<p>例如，学生表中没有重复的属性（列）名，每一行只存储一条学生信息。 </p>
+<p><strong>2）第二范式（2NF）</strong></p>
+<p><strong><em>非主属性完全依赖于一个主关键字</em></strong></p>
+<ul>
+<li>在满足1NF的前提下；</li>
+<li>每个实例（每一行）可以被唯一区分，需要有主属性；</li>
+<li>每一个属性（列）必须完全依赖主属性；</li>
+</ul>
+<p>例如，学生表，学号就是主属性，它可以唯一确定一个学生的姓名、班级</p>
+<p>反例，选课表，存在学号，课程号，成绩，学分。这里，学号&amp;课程号为组合关键字，学分（非主属性）仅靠课程号就能决定（部分依赖）</p>
+<p>a.数据冗余，假设同一门课由40个学生选修，学分就 重复40次</p>
+<p>b.更新异常，若调整了某课程的学分，相应的元组CREDIT值都要更新，有可能会出现同一门课学分不同。 </p>
+<p>c.插入异常，如计划开新课，由于没人选修，没有学号关键字，只能等有人选修才能把课程和学分存入。</p>
+<p>d.删除异常，若学生已经结业，从当前数据库删除选修记录。某些门课程新生尚未选修，则此门课程及学分记录无法保存。</p>
+<p>原因：学分（非主属性）仅靠课程号就能决定（部分依赖），而不是完全依赖</p>
+<p>解决方法：分成两个表。选课表，学号，课程号，成绩。课程表，课程号，学分。</p>
+<p><strong>3）第三范式（3NF）</strong></p>
+<p><strong><em>非主属性不存在传递依赖</em></strong></p>
+<ul>
+<li>在满足2NF的前提下；</li>
+<li>不能包含在其他表中已经声明的非主关键字信息；</li>
+</ul>
+<p>反例，学生表，存在学号，学生姓名，班级号，班级名称。这里，学号可以决定班级号，但是学号不能直接决定班级名称，需要通过班级号来确定班级名称（传递依赖）</p>
+<p>因此，需要通过两张表来表示。即学生表，有学号，学习姓名，班级号。<br>班级表，有班级号，班级名称。学生表和班级表是一对多的关系。</p>
+<p><em>一般来讲满足三范式即可，BCNF，RCNF 请自行了解。</em></p>
+<p>####1.2 关系映射</p>
+<p>在关系型数据库中通常存在三种映射关系：</p>
+<p><strong>1） 一对一</strong></p>
+<p>通常用一张表就能表示关系</p>
+<p>例如一名学生只有一个电话，一个电话对应一名学生；一个人只有一个身份证</p>
+<p><strong>2） 一对多</strong></p>
+<p>通常需要用两张表来表示关系</p>
+<p>例如一名学生只有一个班级，一个班级可以对应多名学生；一个教室可以有多张椅子，一张椅子只属于一个教室</p>
+<p><strong>3） 多对多</strong></p>
+<p>通常需要三张表来表示关系</p>
+<p>例如一名学生有多门课程，一门课程有多名学生选修；一本书可以有多个作者、一个作者可以有很多本书</p>
+<h2 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h2><p>目地：规范化目的是使结构更合理，消除存储异常，使数据冗余尽量小，便于插入、删除和更新 </p>
+<p>原则：遵从概念单一化 “一事一地”原则，即一个关系模式描述一个实体或<br>实体间的一种联系。规范的实质就是概念的单一化。</p>
+<p>方法：将关系模式投影分解成两个或两个以上的关系模式。</p>
+<p>要求：分解后的关系模式集合应当与原关系模式”等价”，即经过自然联接可以恢复原关系而不丢失信息，并保持属性间合理的联系。 </p>
+<p>注意：一个关系模式可以分解为不同关系组合，并不唯一！一般来讲满足三范式即可，BCNF范式是为了多值依赖等规范出现的，但是乱用会破坏完整性。</p>
+<p>1NF：一个table中的列是不可再分的（即列的原子性）</p>
+<p>2NF：一个table中的行是可以唯一标示的，（即table中的行是不可以有重复的）</p>
+<p>3NF：一个table中列不依赖以另一个table中的非主键的列</p>
+<p>下一章介绍数据库的环境搭建。</p>
 
       
     </div>
@@ -333,6 +387,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/数据库/" rel="tag"># 数据库</a>
+          
+        </div>
+      
 
       
       
@@ -342,15 +402,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/08/03/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/08/03/数据库基础（1）关系型数据库/" rel="prev" title="数据库基础（1）关系型数据库">
-                数据库基础（1）关系型数据库 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -473,7 +533,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-是什么"><span class="nav-number">1.1.</span> <span class="nav-text">1 是什么</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小结"><span class="nav-number">2.</span> <span class="nav-text">小结</span></a></li></ol></div>
             
 
           </div>
